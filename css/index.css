@@ -37,7 +37,7 @@ header nav .top-menu li a{
 header nav .top-menu li a:hover {
     border: 1px solid var(--main-color); 
 }
-@media (min-width: 500px){
+@media (min-width: 600px){
     header nav{
         display: flex;
     }
@@ -45,6 +45,12 @@ header nav .top-menu li a:hover {
         flex: 1;
         align-items: center;
     }
+    main .product-list .product-card img {
+        display: block;
+        width: 100%;
+        max-height: 450px;
+    }
+
 }
 
 header .banner {
@@ -60,6 +66,21 @@ header .banner {
 header .banner .title{
     color: var(--accent-color);
 }
+@media (min-width: 580px) {
+    main .product-list {
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    }
+@media (min-width: 700px) {
+    main .product-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 900px) {
+    main .product-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 .button{
     display: inline-block;
     padding: 0.35em 1.2em;
@@ -79,7 +100,17 @@ header .banner .title{
     background-color: #ffffff;
     cursor: pointer;
 }
-card-button {
+.card-button {
      border-color: black;
      color:black;
 }
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
+ .product-card img{
+    max-width: 400px;
+    max-height: 300px;
+}
+
+
