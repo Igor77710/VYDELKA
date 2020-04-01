@@ -4,6 +4,7 @@ h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
+
 :root{
     font-family: 'Raleway', sans-serif;
     --main-color: black;
@@ -37,6 +38,15 @@ header nav .top-menu li a{
 header nav .top-menu li a:hover {
     border: 1px solid var(--main-color); 
 }
+@media (min-width:100px){
+    main .product-list .product-card img {
+        display: block;
+        width: 100%;
+        max-height: 450px;
+    }
+
+}
+
 @media (min-width: 600px){
     header nav{
         display: flex;
@@ -44,11 +54,6 @@ header nav .top-menu li a:hover {
     header .top-menu{
         flex: 1;
         align-items: center;
-    }
-    main .product-list .product-card img {
-        display: block;
-        width: 100%;
-        max-height: 450px;
     }
 
 }
@@ -66,7 +71,7 @@ header .banner {
 header .banner .title{
     color: var(--accent-color);
 }
-@media (min-width: 580px) {
+@media (min-width: 300px) {
     main .product-list {
      display: grid;
     grid-template-columns: 1fr 1fr;
@@ -112,5 +117,3 @@ header .banner .title{
     max-width: 400px;
     max-height: 300px;
 }
-
-
